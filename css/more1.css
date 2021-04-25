@@ -170,12 +170,24 @@ p{
 
 /* Social Media Handle */
 .media {
-  padding-bottom: 150px;
+  padding-bottom: 200px;
+  padding: 30px;
+}
+
+.media i{
+  color: blue;
+  padding: 20px;
 }
 
 .media p {
   font-size: 19px;
 }
+
+.media a{
+   padding: 1px;
+}
+
+
 
 /* Footer */
 .footer{
