@@ -102,7 +102,7 @@ p{
 }
 
 .head{
-  margin: 20px;
+  margin: 40px;
   padding-top: 50px;
 }
 
@@ -110,6 +110,30 @@ p{
   color: blue;
 }
 
+.head li {
+  font-size: 40px;
+  text-align: center;
+}
+
+.head p {
+  font-size: 20px;
+}
+
 .head img{
-  width: 100%;
+  width: 50%;
+
+}
+
+.examples{
+  background-color: rgb(211, 230, 236);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.examples img{
+  border-left: 5px solid var(--primary-color);
+  max-width: 50%;
+  margin: 28px;
+  height: auto;
+  margin-bottom: 10px;
 }
