@@ -1,0 +1,210 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --primary-color: rgb(189, 189, 226);
+}
+
+body{
+  line-height: 1.6;
+  color: black;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  transform: scale(0.90)
+}
+
+a.active{
+  border-bottom: 2px solid black;
+}
+
+hr{
+  border:0.3px solid rgb(230, 227, 227);
+  width: 100%;
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  margin: 12px;
+}
+
+h1, h2{
+  line-height: 1.2;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+p{
+  margin: 10px 0;
+}
+
+img{
+  height: 80px;
+  width: 70px;
+}
+
+.logo img{
+  height: 80px;
+  width: 70px;
+  margin-left: 15px;
+}
+
+
+.navbar{
+  background-color: rgb(189, 189, 226);
+  color: black;
+  height: 160px;
+}
+
+.navbar b{
+  font-size: 30px;
+  text-align: center;
+}
+
+.navbar ul{
+  display:flex;
+}
+
+.navbar a{
+  color: black;
+  padding: 10px;
+  margin: 5px;
+}
+
+.navbar a:hover{
+  border-bottom: 2px solid black;
+}
+
+.navbar .flex{
+  justify-content: space-between;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: row;
+}
+
+@media (max-width: 800px){
+  .flex{
+    flex-direction: column;
+  }
+}
+
+.alert {
+  padding: 20px;
+  background-color: var(--primary-color);
+  color: black;
+  margin-top: 50px;
+  transition: 1.5s;
+  text-align: center;
+}
+
+.closebtn{
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 40px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 2s;
+}
+
+.closebtn:hover{
+  color: white;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  background: rgb(189, 189, 226);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px ;
+}
+
+.btn a{
+  color: black;
+}
+
+.btn-outline{
+  background-color: black;
+}
+
+.btn:hover{
+  transform: scale(0.90);
+}
+
+.header .moving{
+  padding-top: 60px;
+}
+
+.head{
+  margin: 20px;
+  padding-top: 50px;
+}
+
+.head p{
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.head h1{
+  padding-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.head span{
+  color: blue;
+}
+
+.head button{
+  margin-left: 20px;
+}
+
+.footer{
+  background-color: var(--primary-color);
+  margin-top: 20px;
+  width: 100%;
+}
+
+.footer img{
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.footer h1, p{
+  text-align: left;
+  margin-left: 30px;
+  color: black;
+}
+
+.footer div{
+  text-decoration: underline black;
+}
+
+.footer b{
+  text-align: center;
+  margin-left: 30px ;
+  color: black;
+  font-size: 14px;
+}

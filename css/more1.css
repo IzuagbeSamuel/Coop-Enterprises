@@ -1,0 +1,210 @@
+/* Global Declaration */
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+hr{
+  border:0.3px solid rgb(230, 227, 227);
+  width: 100%;
+  margin: 0;
+}
+
+
+body{
+  line-height: 1.6;
+  color: black;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+:root{
+  --primary-color:rgb(189, 189, 226)
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  transform: scale(0.90)
+}
+
+a.active{
+  border-bottom: 2px solid black;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  margin: 12px;
+}
+
+h1, h2{
+  line-height: 1.2;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+p{
+  margin: 10px 0;
+}
+
+/* Logo Image */
+.logo img{
+  height: 80px;
+  width: 70px;
+  margin-left: 15px;
+}
+
+/* Nav Bar */
+.navbar{
+  background-color: rgb(189, 189, 226);
+  color: black;
+  height: 170px;
+}
+
+.navbar p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.navbar ul{
+  display:flex;
+}
+
+.navbar a{
+  color: black;
+  padding: 10px;
+  margin: 5px;
+}
+
+.navbar a:hover{
+  border-bottom: 2px solid black;
+}
+
+.navbar .flex{
+  justify-content: space-between;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: row;
+}
+
+@media (max-width: 800px){
+  .flex{
+    flex-direction: column;
+  }
+}
+
+/* Body of Blog */
+.container{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.head{
+  margin: 20px;
+  padding-top: 50px;
+}
+
+.head span{
+  color: blue;
+}
+
+.head li{
+  font-size: 28px;
+}
+
+.head ol{
+  margin-left: 20px;
+}
+
+.head p{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.head img{
+  width: 88%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Button */
+.btn{
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  background: rgb(189, 189, 226);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  margin-bottom:15px ;
+}
+
+.btn a{
+  color: black;
+  text-align: center;
+}
+
+.btn-outline{
+  background-color: black;
+}
+
+.btn:hover{
+  transform: scale(0.90);
+}
+
+.previous{
+  text-align: center;
+}
+
+/* Social Media Handle */
+.media {
+  padding-bottom: 150px;
+}
+
+.media p {
+  font-size: 19px;
+}
+
+/* Footer */
+.footer{
+  background-color: var(--primary-color);
+  margin-top: 20px;
+  width: 100%;
+}
+
+.footer img{
+  width: 80px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.footer h1, p{
+  text-align: left;
+  margin-left: 30px;
+  color: black;
+}
+
+.footer div{
+  text-decoration: underline black;
+}
+
+.footer b{
+  text-align: center;
+  margin-left: 30px ;
+  color: black;
+}
+
+
+
