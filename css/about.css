@@ -107,3 +107,36 @@ p{
   margin-left: 30px;
   margin-right: 30PX;
 }
+
+.about h1 {
+  margin-left: 30px;
+}
+
+.footer{
+  background-color: var(--primary-color);
+  margin-top: 20px;
+  width: 100%;
+}
+
+.footer img{
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 70px;
+}
+
+.footer h1, p{
+  text-align: left;
+  margin-left: 30px;
+  color: black;
+}
+
+.footer div{
+  text-decoration: underline black;
+}
+
+.footer b{
+  text-align: center;
+  margin-left: 30px ;
+  color: black;
+  font-size: 14px;
+}
