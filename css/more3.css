@@ -1,0 +1,102 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+hr{
+  border:0.3px solid rgb(230, 227, 227);
+  width: 100%;
+  margin: 0;
+}
+
+
+body{
+  line-height: 1.6;
+  color: black;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+:root{
+  --primary-color:rgb(189, 189, 226)
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  transform: scale(0.90)
+}
+
+a.active{
+  border-bottom: 2px solid black;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  margin: 12px;
+}
+
+h1, h2{
+  line-height: 1.2;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+p{
+  margin: 10px 0;
+}
+
+.logo img{
+  height: 80px;
+  width: 70px;
+  margin-left: 15px;
+}
+
+.navbar{
+  background-color: rgb(189, 189, 226);
+  color: black;
+  height: 170px;
+}
+
+.navbar p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.navbar ul{
+  display:flex;
+}
+
+.navbar a{
+  color: black;
+  padding: 10px;
+  margin: 5px;
+}
+
+.navbar a:hover{
+  border-bottom: 2px solid black;
+}
+
+.navbar .flex{
+  justify-content: space-between;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: row;
+}
+
+@media (max-width: 800px){
+  .flex{
+    flex-direction: column;
+  }
+}

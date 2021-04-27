@@ -70,6 +70,10 @@ p{
   text-align: center;
 }
 
+.navbar b{
+  text-align: center;
+}
+
 .navbar ul{
   display:flex;
 }
@@ -110,6 +114,25 @@ p{
 
 .about h1 {
   margin-left: 30px;
+}
+
+.media {
+  padding-bottom: 400px;
+  padding-top: 300px;
+  padding: 5px;
+}
+
+.media i{
+  color: blue;
+  padding: 20px;
+}
+
+.media p {
+  font-size: 19px;
+}
+
+.media a{
+  padding: 1px;
 }
 
 .footer{

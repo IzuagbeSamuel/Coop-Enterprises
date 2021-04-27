@@ -135,7 +135,6 @@ p{
 .showcase-form textarea[name='message'],
 .showcase-form input[type='email']{
    border: 0;
-   border-bottom: 1px solid #b4becb;
    width: 100%;
    padding: 15px;
    font-size: 16px;
@@ -169,7 +168,7 @@ p{
 .media {
   padding-bottom: 400px;
   padding-top: 300px;
-  padding: 30px;
+  padding: 5px;
 }
 
 .media i{
@@ -185,12 +184,17 @@ p{
    padding: 1px;
 }
 
+
 .hide {
   margin: 30px;
-  padding: 30px;
+  padding: 40px;
   background-color: var(--primary-color);
   border-radius: 30px;
   display: none;
+}
+
+.hide b {
+  float: right;
 }
 
 .footer{
