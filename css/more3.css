@@ -103,13 +103,18 @@ p{
 }
 
 .showcase {
-  margin: 40px;
+  margin: 20px;
   padding-top: 60px;
+}
+
+.showcase h1 {
+  margin: 20px;
 }
 
 .showcase span {
   color: blue;
   font-size: 20px;
+  margin: 20px;
 }
 
 .example-showcase {
@@ -205,3 +210,88 @@ p{
   border: 2px solid red;
 }
 
+.example7 {
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.media {
+  padding-bottom: 400px;
+  padding-top: 300px;
+  padding: 30px;
+}
+
+.media i{
+  color: blue;
+  padding: 20px;
+}
+
+.media p {
+  font-size: 19px;
+}
+
+.media a{
+   padding: 1px;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  background:var(--primary-color);
+  color: black;
+  border: 3px solid white;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.btn-outline{
+  background-color: black;
+}
+
+.btn:hover{
+  transform: scale(0.90);
+}
+
+.previous{
+  text-align: center;
+}
+
+.previous a{
+  color: black;
+  background-color: var(--primary-color);
+}
+
+.previous.btn{
+  background-color: var(--primary-color);
+}
+
+.footer{
+  background-color: var(--primary-color);
+  margin-top: 20px;
+  width: 100%;
+}
+
+.footer img{
+  width: 80px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.footer h1, p{
+  text-align: left;
+  margin-left: 30px;
+  color: black;
+}
+
+.footer div{
+  text-decoration: underline black;
+}
+
+.footer b{
+  text-align: center;
+  margin-left: 30px ;
+  color: black;
+}
