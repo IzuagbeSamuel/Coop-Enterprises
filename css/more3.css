@@ -50,6 +50,7 @@ h1, h2{
 
 p{
   margin: 10px 0;
+  font-size: 20px;
 }
 
 .logo img{
@@ -100,3 +101,72 @@ p{
     flex-direction: column;
   }
 }
+
+.showcase {
+  margin: 40px;
+  padding-top: 60px;
+}
+
+.showcase span {
+  color: blue;
+  font-size: 20px;
+}
+
+.example-showcase {
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  border: 2px solid red;
+}
+
+.example1 {
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  margin: auto;
+  padding: 20px;
+}
+
+.clr {
+  clear: both;
+}
+.example-image-showcase img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.example2 {
+  background-color: var(--primary-color);
+  padding: 20px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.example-text-showcase {
+  text-align: center;
+  border: 2px solid red;
+}
+
+.example3 {
+  margin: auto;
+  padding: 20px;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+}
+
+.example-right-showcase {
+  width: 300px;
+  border: 2px solid red;
+  float: right;
+  right: 0px;
+  padding: 10px;
+}
+
+.example4 {
+  padding: 20px;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  margin: auto;
+}
+
