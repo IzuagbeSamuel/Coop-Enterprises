@@ -118,24 +118,13 @@ p{
   font-size: 20px;
 }
 
-.head img{
-  width: 70%;
-
-}
-
 .examples{
   background-color: rgb(211, 230, 236);
   padding: 10px;
   border-radius: 10px;
 }
 
-.examples img{
-  border-left: 5px solid var(--primary-color);
-  max-width: 70%;
-  margin-left: 20px;
-  height: auto;
-  margin-bottom: 10px;
-}
+
 
 .showcase-form{
   position: relative;
