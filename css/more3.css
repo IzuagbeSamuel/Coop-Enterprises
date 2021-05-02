@@ -170,3 +170,38 @@ p{
   margin: auto;
 }
 
+.example-padding-showcase {
+  padding: 70px 0;
+  border: 2px solid red;
+  text-align: center;
+}
+
+.example5 {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  margin: auto;
+}
+
+.example-line-showcase {
+  line-height: 200px;
+  height: 200px;
+  border: 2px solid red;
+  text-align: center;
+}
+
+.example6 {
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.example-flexbox-showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 2px solid red;
+}
+
