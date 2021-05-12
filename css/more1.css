@@ -28,6 +28,12 @@ a{
   text-decoration: none;
 }
 
+hr{
+  border:0.3px solid rgb(230, 227, 227);
+  width: 100%;
+  margin: 0;
+}
+
 a:hover{
   transform: scale(0.90)
 }
