@@ -36,10 +36,6 @@ ul{
   list-style: none;
 }
 
-li{
-  margin: 12px;
-}
-
 h1, h2{
   line-height: 1.2;
   font-weight: 300;
@@ -48,7 +44,7 @@ h1, h2{
 
 p{
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 img{
@@ -66,7 +62,7 @@ img{
 .navbar{
   background-color: rgb(189, 189, 226);
   color: black;
-  height: 160px;
+  height: 155px;
 }
 
 .navbar b{
@@ -80,8 +76,9 @@ img{
 
 .navbar a{
   color: black;
-  padding: 10px;
-  margin: 5px;
+  padding: 5px 15px;
+  margin: 10px;
+  font-size: 17px;
 }
 
 .navbar a:hover{
@@ -115,7 +112,7 @@ img{
   text-align: center;
 }
 
-.closebtn{
+.closebtn {
   color: white;
   font-weight: bold;
   float: right;
@@ -208,6 +205,7 @@ img{
 }
 
 .footer img{
+  width: 80px;
   margin-left: 30px;
   margin-top: 30px;
 }

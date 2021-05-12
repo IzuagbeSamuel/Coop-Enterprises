@@ -40,10 +40,6 @@ ul{
   list-style: none;
 }
 
-li{
-  margin: 12px;
-}
-
 h1, h2{
   line-height: 1.2;
   font-weight: 300;
@@ -52,7 +48,7 @@ h1, h2{
 
 p{
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 /* Logo Image */
@@ -66,10 +62,10 @@ p{
 .navbar{
   background-color: rgb(189, 189, 226);
   color: black;
-  height: 170px;
+  height: 155px;
 }
 
-.navbar p{
+.navbar b{
   font-size: 30px;
   text-align: center;
 }
@@ -80,8 +76,9 @@ p{
 
 .navbar a{
   color: black;
-  padding: 10px;
-  margin: 5px;
+  padding: 5px 15px;
+  margin: 10px;
+  font-size: 17px;
 }
 
 .navbar a:hover{
@@ -107,37 +104,44 @@ p{
 }
 
 /* Body of Blog */
-.container{
+.head{
+  margin: 20px;
+  padding-top: 50px;
+}
+
+.head p {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.head{
-  margin: 20px;
-  padding-top: 50px;
+.head h1 {
+  padding-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .head span{
   color: blue;
 }
 
+.head a {
+  margin-left: 5px;
+}
+.head ol {
+  margin-left: 5px;
+}
+
 .head li{
-  font-size: 28px;
-}
-
-.head ol{
+  font-size: 25px;
   margin-left: 20px;
-}
-
-.head p{
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .head img{
-  width: 88%;
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 /* Button */
@@ -171,13 +175,14 @@ p{
 
 /* Social Media Handle */
 .media {
-  padding-bottom: 200px;
-  padding: 30px;
+  padding-bottom: 400px;
+  padding-top: 300px;
+  padding: 5px;
 }
 
 .media i{
   color: blue;
-  padding: 20px;
+  padding: 10px;
 }
 
 .media p {
@@ -237,6 +242,7 @@ p{
   text-align: center;
   margin-left: 30px ;
   color: black;
+  font-size: 14px;
 }
 
 
