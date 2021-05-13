@@ -6,7 +6,7 @@
 
 
 hr{
-  border:0.3px solid rgb(230, 227, 227);
+  border: 1px solid rgb(230, 227, 227);
   width: 100%;
   margin: 0;
 }
@@ -38,10 +38,6 @@ ul{
   list-style: none;
 }
 
-li{
-  margin: 12px;
-  font-size: 20px;
-}
 
 h1, h2{
   line-height: 1.2;
@@ -51,34 +47,35 @@ h1, h2{
 
 p{
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .logo img{
   height: 80px;
   width: 80px;
-  margin-left: 15px;
 }
 
 .navbar{
   background-color: rgb(189, 189, 226);
   color: black;
-  height: 170px;
+  height: 160px;
 }
 
-.navbar p{
+.navbar b{
   font-size: 30px;
   text-align: center;
 }
 
 .navbar ul{
   display:flex;
+  padding-top: 10px;
 }
 
 .navbar a{
   color: black;
-  padding: 10px;
-  margin: 5px;
+  padding: 5px 15px;
+  margin: 10px;
+  font-size: 17px;
 }
 
 .navbar a:hover{
@@ -104,8 +101,19 @@ p{
 }
 
 .showcase {
-  margin: 30px;
+  margin: 20px;
   padding-top: 50px;
+}
+
+.showcase p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.showcase h1 {
+  padding-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .showcase span {
@@ -114,12 +122,14 @@ p{
 
 .showcase li {
   list-style-type: disc;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .showcase img {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 60%;
+  width: 100%;
 }
 

@@ -6,7 +6,7 @@
 
 
 hr{
-  border:0.3px solid rgb(230, 227, 227);
+  border: 1px solid rgb(230, 227, 227);
   width: 100%;
   margin: 0;
 }
@@ -38,10 +38,6 @@ ul{
   list-style: none;
 }
 
-li{
-  margin: 12px;
-}
-
 h1, h2{
   line-height: 1.2;
   font-weight: 300;
@@ -50,34 +46,35 @@ h1, h2{
 
 p{
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .logo img{
   height: 80px;
   width: 80px;
-  margin-left: 15px;
 }
 
 .navbar{
   background-color: rgb(189, 189, 226);
   color: black;
-  height: 170px;
+  height: 160px;
 }
 
-.navbar p{
+.navbar b{
   font-size: 30px;
   text-align: center;
 }
 
 .navbar ul{
   display:flex;
+  padding-top: 10px;
 }
 
 .navbar a{
   color: black;
-  padding: 10px;
-  margin: 5px;
+  padding: 5px 15px;
+  margin: 10px;
+  font-size: 17px;
 }
 
 .navbar a:hover{
@@ -103,8 +100,20 @@ p{
 }
 
 .contact {
-  padding-top: 70px;
-  margin: 35px
+  margin: 20px;
+  padding-top: 50px;
+}
+
+
+.contact p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.contact h1 {
+  padding-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .showcase-form{
@@ -119,6 +128,11 @@ p{
   text-align: center;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   margin-left: 40px;
+  text-align: center;
+  display: block;
+}
+
+#form {
   text-align: center;
 }
 

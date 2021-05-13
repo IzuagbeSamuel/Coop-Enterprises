@@ -6,7 +6,7 @@
 
 
 hr{
-  border:0.3px solid rgb(230, 227, 227);
+  border:1px solid rgb(230, 227, 227);
   width: 100%;
   margin: 0;
 }
@@ -38,10 +38,6 @@ ul{
   list-style: none;
 }
 
-li{
-  margin: 12px;
-}
-
 h1, h2{
   line-height: 1.2;
   font-weight: 300;
@@ -50,34 +46,35 @@ h1, h2{
 
 p{
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .logo img{
   height: 80px;
   width: 80px;
-  margin-left: 15px;
 }
 
 .navbar{
   background-color: rgb(189, 189, 226);
   color: black;
-  height: 170px;
+  height: 160px;
 }
 
-.navbar p{
+.navbar b{
   font-size: 30px;
   text-align: center;
 }
 
 .navbar ul{
   display:flex;
+  padding-top: 10px;
 }
 
 .navbar a{
   color: black;
-  padding: 10px;
-  margin: 5px;
+  padding: 5px 15px;
+  margin: 10px;
+  font-size: 17px;
 }
 
 .navbar a:hover{
@@ -104,16 +101,22 @@ p{
 
 .showcase {
   margin: 20px;
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
-.showcase h1 {
-  margin: 20px;
+.showcase p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.showcase h1, h2 {
+  padding-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .showcase span {
   color: blue;
-  font-size: 20px;
   margin: 20px;
 }
 
@@ -127,8 +130,16 @@ p{
 .example1 {
   background-color: var(--primary-color);
   border-radius: 20px;
-  margin: auto;
+  margin: 20px;
   padding: 20px;
+}
+
+.example1 img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 5px;
 }
 
 .clr {
@@ -143,9 +154,57 @@ p{
 
 .example2 {
   background-color: var(--primary-color);
+  margin: 20px;
   padding: 20px;
-  margin: auto;
   border-radius: 20px;
+}
+
+.example2 img {
+  border-radius: 5px; width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.example3 img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.example4 img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.example5 img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.example6 img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.example7 img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 5px;
 }
 
 .example-text-showcase {
@@ -154,7 +213,7 @@ p{
 }
 
 .example3 {
-  margin: auto;
+  margin: 20px;
   padding: 20px;
   background-color: var(--primary-color);
   border-radius: 20px;
@@ -169,10 +228,10 @@ p{
 }
 
 .example4 {
+  margin: 20px;
   padding: 20px;
   background-color: var(--primary-color);
   border-radius: 20px;
-  margin: auto;
 }
 
 .example-padding-showcase {
@@ -182,10 +241,10 @@ p{
 }
 
 .example5 {
+  margin: 20px;
   padding: 20px;
   border-radius: 20px;
   background-color: var(--primary-color);
-  margin: auto;
 }
 
 .example-line-showcase {
@@ -197,9 +256,9 @@ p{
 
 .example6 {
   background-color: var(--primary-color);
+  margin: 20px;
   padding: 20px;
   border-radius: 20px;
-  margin: auto;
 }
 
 .example-flexbox-showcase {
@@ -212,20 +271,20 @@ p{
 
 .example7 {
   background-color: var(--primary-color);
+  margin: 20px;
   padding: 20px;
   border-radius: 20px;
-  margin: auto;
 }
 
 .media {
   padding-bottom: 400px;
   padding-top: 300px;
-  padding: 30px;
+  padding: 5px;
 }
 
 .media i{
   color: blue;
-  padding: 20px;
+  padding: 10px;
 }
 
 .media p {

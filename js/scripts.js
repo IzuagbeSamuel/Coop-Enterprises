@@ -1,6 +1,6 @@
 $(document).ready(function(){
   
-mybutton = document.getElementById("myBtn");
+myButton = document.getElementById("myBtn");
 
   window.onscroll = function() {
     scrollFunction()
@@ -12,9 +12,9 @@ mybutton = document.getElementById("myBtn");
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop
       > 20) {
-        mybutton.style.display = "block";
+        myButton.style.display = "block";
       } else {
-        mybutton.style.display = "none";
+        myButton.style.display = "none";
       }
   }
   

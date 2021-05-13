@@ -8,7 +8,7 @@
 
 
 hr{
-  border:0.3px solid rgb(230, 227, 227);
+  border: 1px solid rgb(230, 227, 227);
   width: 100%;
   margin: 0;
 }
@@ -26,12 +26,6 @@ body{
 
 a{
   text-decoration: none;
-}
-
-hr{
-  border:0.3px solid rgb(230, 227, 227);
-  width: 100%;
-  margin: 0;
 }
 
 a:hover{
@@ -61,14 +55,13 @@ p{
 .logo img{
   height: 80px;
   width: 80px;
-  margin-left: 15px;
 }
 
 /* Nav Bar */
 .navbar{
   background-color: rgb(189, 189, 226);
   color: black;
-  height: 155px;
+  height: 160px;
 }
 
 .navbar b{
@@ -78,6 +71,7 @@ p{
 
 .navbar ul{
   display:flex;
+  padding-top: 10px;
 }
 
 .navbar a{
