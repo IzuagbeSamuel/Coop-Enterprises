@@ -193,6 +193,32 @@ p{
    padding: 1px;
 }
 
+
+.comment{
+  margin: 20px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.comment p{
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.comment h3{
+  padding-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.form-comment-control textarea {
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  padding-top: 10px;
+  outline: none;
+}
+
 .footer{
   background-color: var(--primary-color);
   margin-top: 20px;
