@@ -118,7 +118,7 @@ a.active,a:hover {
 }
 
 @media (max-width: 858px) {
-  .ckeckbtn {
+  .checkbtn {
     display: block;
   }
 
