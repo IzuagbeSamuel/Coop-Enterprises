@@ -24,14 +24,6 @@ a{
   text-decoration: none;
 }
 
-a:hover{
-  transform: scale(0.90)
-}
-
-a.active{
-  border-bottom: 2px solid black;
-}
-
 ul{
   list-style: none;
 }
@@ -49,7 +41,7 @@ p{
 
 nav {
   background-color: var(--primary-color);
-  height: 100px;
+  height: 80px;
   width: 100%;
 }
 
@@ -84,7 +76,7 @@ nav ul li a {
   padding: 7px 15px;
 }
 
-a.active,a:hover {
+ nav a.active, nav a:hover {
   border-bottom: 3px solid white;
 }
 
@@ -105,6 +97,10 @@ a.active,a:hover {
 @media (max-width: 952px) {
   label.logo {
     font-size: 18px;
+  }
+
+  nav {
+    height: 70px;
   }
 
   nav img {
