@@ -4,92 +4,91 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/a15138ce98.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="css/more5.css" />
+    <script src="https://kit.fontawesome.com/a15138ce98.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/index.js"></script>
     <title>Coop Enterprise</title>
   </head>
   <!-- Body Starts Here -->
   <body>
     <!-- Navbar -->
-    <div class="navbar">
-      <div class="container flex">
-        <h1 class="logo"><img src="images/logo.png" alt="Logo" /></h1>
-        <b>Coop Enterprise</b>
-        <nav>
-          <ul>
-            <li><a class="active" href="index.html">Blog</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <boy>
-      <div class="showcase">
-        <h1>Introduction to GitHub and Git</h1>
-        <p><span>April 23, 2021 | By Izuagbe Samuel</span></p>
-        <p>
-          GitHub is a trending and a very popular public gathering for
-          Developers. It's where millions of developers contribute to the future
-          of software, contributing to the open source of millions of public and
-          private codes. Using Git Bash as an application for Microsoft Windows
-          environment to make changes to you GitHub account.
-        </p>
-        <br>
-        <hr>
-        <br>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"
+        ><img src="images/logo.png" alt="" />Coop Enterprise Blog</label
+      >
+      <ul>
+        <li><a class="active" href="index.html">Blogs</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-        <b><h1>Git</h1></b>
-        <p>
-          Is a command prompt navigator or a control system that allows users to
-          navigate through your system to make files, remove files, make a
-          directory, and take snapshot of our codes to GitHub.
-        </p>
+    <div class="showcase">
+      <h1>Introduction to GitHub and Git</h1>
+      <p><span>April 23, 2021 | By Izuagbe Samuel</span></p>
+      <p>
+        GitHub is a trending and a very popular public gathering for Developers.
+        It's where millions of developers contribute to the future of software,
+        contributing to the open source of millions of public and private codes.
+        Using Git Bash as an application for Microsoft Windows environment to
+        make changes to you GitHub account.
+      </p>
+      <br />
+      <hr />
+      <br />
 
-        <p>In this blog I'll be talking about various Git commands:</p>
-        <ul>
-          <b
-            ><li>git config</li>
-            <li>git init</li>
-            <li>git add</li>
-            <li>git status</li>
-            <li>git rm</li>
-            <li>git log</li>
-            <li>git show</li>
-            <li>git branch</li>
-            <li>git clone</li>
-            <li>git commit</li>
-            <li>git diff</li>
-            <li>git reset</li>
-            <li>git tag</li>
-            <li>git checkout</li>
-            <li>git pull</li>
-            <li>git merge</li>
-            <li>git remote</li>
-            <li>git stash</li>
-            <p>
-              We'll also deal with some commands that helps us navigate through the computer:
-            </p>
-            <li>mkdir</li>
-            <li>touch</li>
-            <li>rmdir</li>
-            <li>cd</li>
-            <li>pwd</li>
-            <li>cd ../</li>
-            <li>ls -a</li></b
-          >
-        </ul>
-        <br>
-        <hr>
-        <br>
+      <b><h1>Git</h1></b>
+      <p>
+        Is a command prompt navigator or a control system that allows users to
+        navigate through your system to make files, remove files, make a
+        directory, and take snapshot of our codes to GitHub.
+      </p>
 
-        <b><h1>Git Commands</h1></b>
-        <ul>
+      <p>In this blog I'll be talking about various Git commands:</p>
+      <ul>
+        <b
+          ><li>git config</li>
+          <li>git init</li>
+          <li>git add</li>
+          <li>git status</li>
+          <li>git rm</li>
+          <li>git log</li>
+          <li>git show</li>
+          <li>git branch</li>
+          <li>git clone</li>
+          <li>git commit</li>
+          <li>git diff</li>
+          <li>git reset</li>
+          <li>git tag</li>
+          <li>git checkout</li>
+          <li>git pull</li>
+          <li>git merge</li>
+          <li>git remote</li>
+          <li>git stash</li>
+          <p>
+            We'll also deal with some commands that helps us navigate through
+            the computer:
+          </p>
+          <li>mkdir</li>
+          <li>touch</li>
+          <li>rmdir</li>
+          <li>cd</li>
+          <li>pwd</li>
+          <li>cd ../</li>
+          <li>ls -a</li></b
+        >
+      </ul>
+      <br />
+      <hr />
+      <br />
+
+      <b><h1>Git Commands</h1></b>
+      <ul>
         <b><li>git config</li></b>
         <p>
           This command sets the author name and email address globally when
@@ -108,31 +107,34 @@
           email to be the author of any code we commit.
         </p>
         <img src="images/git1.png" alt="" />
-        <br>
-        <hr>
-        <br>
+        <br />
+        <hr />
+        <br />
 
         <b><li>git init</li></b>
-        <p>This command is used to start a repository. Using <b>git init</b> means initializing the git files in you directory or folder when starting a repository.</p>
+        <p>
+          This command is used to start a repository. Using
+          <b>git init</b> means initializing the git files in you directory or
+          folder when starting a repository.
+        </p>
 
         <p><b>Command Line: git init</b></p>
-        <img src="images/git2.png" alt="">
-        <br>
-        <hr>
-        <br>
+        <img src="images/git2.png" alt="" />
+        <br />
+        <hr />
+        <br />
 
         <b><li>git add</li></b>
         <p>This command add a file to the staging area</p>
-        
+
         <b><p>Command Line: git add [file name]</p></b>
-        <img src="images/git3.png" alt="">
-        <br>
-        <hr>
-        <br>
+        <img src="images/git3.png" alt="" />
+        <br />
+        <hr />
+        <br />
 
         <b><li>git status</li></b>
-
-        </ul>
-      </div>
-</body>
+      </ul>
+    </div>
+  </body>
 </html>
