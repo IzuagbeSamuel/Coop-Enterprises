@@ -65,7 +65,7 @@
           <li>git branch</li>
           <li>git clone</li>
           <li>git commit</li>
-          <li>git diff</li>
+          <!-- <li>git diff</li> -->
           <li>git reset</li>
           <li>git tag</li>
           <li>git checkout</li>
@@ -93,34 +93,17 @@
       <b><h1>Git Commands</h1></b>
       <ul>
         <b><li>git config</li></b>
-        <p>
-          This command sets the author name and email address globally when
-          commit.
-        </p>
-
-        <b>
-          <p>Command Line: git config --global user.name "[name]"</p>
-          <p>Command Line: git config --global user.email "[email]"</p></b
-        >
-
-        <p>
-          When we commit our codes, (I know you're wondering what commit is
-          we'll talk more about it later in this blog) we want our names or
-          credential to be authored by us. <b>git config</b> sets our names and
-          email to be the author of any code we commit.
-        </p>
+        <p>This command sets the author name and email address globally when commit.</p>
+        <b><p>Command Line: git config --global user.name "[name]"</p>
+          <p>Command Line: git config --global user.email "[email]"</p></b>
+        <p>When we commit our codes, (I know you're wondering what commit is we'll talk more about it later in this blog) we want our names or credential to be authored by us. <b>git config</b> sets our names and email to be the author of any code we commit.</p>
         <img src="images/git1.png" alt="" />
         <br />
         <hr />
         <br />
 
         <b><li>git init</li></b>
-        <p>
-          This command is used to start a repository. Using
-          <b>git init</b> means initializing the git files in you directory or
-          folder when starting a repository.
-        </p>
-
+        <p>This command is used to start a repository. Using <b>git init</b> means initializing the git files in you directory or folder when starting a repository.</p>
         <p><b>Command Line: git init</b></p>
         <img src="images/git2.png" alt="" />
         <br />
@@ -129,13 +112,10 @@
 
         <b><li>git add</li></b>
         <p>This command add a file to the staging area. This is normally done after you might have edited that file. </p>
-
         <b><p>Command Line: git add [file name]</p></b>
         <img src="images/git3.png" alt="" />
         <br />
-
         <b><p>Command Line: git add .</p></b>
-
         <p>This command adds more than one files to the staging area</p>
         <img src="images/add.png" alt="">
         <br>
@@ -209,8 +189,25 @@
         <br>
         <hr>
         <br>
+<!-- 
+        <b><li>git diff</li></b>
+        <p> This shows the differences which are not yet staged in the working file.</p>
+        <b><p>Command Line: git diff </p></b>
 
-        
+        <br>
+        <p>This command shows the differences between the files in the latest version present from the previous staging area.</p>
+        <b><p>Command Line: git diff -staged</p></b>
+        <br>
+        <hr>
+        <br> -->
+
+        <b><li>git tag</li></b>
+        <p> This command is used to give tags to the specified commit. </p>
+        <b><p>Command Line: git tag [Commit ID]</p></b>
+        <img src="images/tag.png" alt="">
+        <br>
+        <hr>
+        <br>
       </ul>
     </div>
   </body>
