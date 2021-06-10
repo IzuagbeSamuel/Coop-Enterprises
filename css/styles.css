@@ -83,7 +83,7 @@ nav ul li a {
 
 nav a.active,
 nav a:hover {
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid black;
 }
 
 .checkbtn {
