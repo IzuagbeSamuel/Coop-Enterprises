@@ -5,55 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <script
       src="https://kit.fontawesome.com/a15138ce98.js"
       crossorigin="anonymous"
     ></script>
     <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/index.js"></script>
     <title>Coop Enterprise</title>
   </head>
   <!-- Body Starts Here -->
   <body>
     <!-- Navbar -->
     <nav>
-      <input type="checkbox" id="check">
+      <input type="checkbox" id="check" />
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
       </label>
-      <label class="logo"><img src="images/logo.png" alt="">Coop Enterprise Blog</label>
-      <ul>
-        <div class="dropdown" onclick="myFunction()">
-          <li><a  class="active" href="#">Blogs</a></li>
-          <div id="myDropdown" class="dropdown-content">
-            <li><a href="more1.html">Best Tools and Deals for Developers and Designers</a></li>
-            <li><a href="more2.html">Powerful Techniques for Responsive Web Design</a></li>
-            <li><a href="more3.html">CSS Vertical Alignment: Tips and Techniques</a></li>
-            <li><a href="more4.html">Quick Tips to make your WordPress Site Faster</a></li>
-            <li><a href="more5.html">Introduction to GitHub and Git Bash </a></li>
-          </div>
-        </div>
+      <label class="logo"
+        ><img src="images/logo.png" alt="" />Coop Enterprise Blog</label
+      >
+      <ul id="nav">
+        <li><a class="active" href="#">Blogs</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    
 
     <div class="alert">
       <span class="closebtn" onclick="this.parentElement.style.display='none'"
         >&times;</span
-      >
-      Welcome To My Blog
+      >Welcome To My Blog
     </div>
 
     <div class="bg"></div>
+
+    <div class="search-box" id="search">
+      <div class="search-content">
+        <input type="text" />
+      </div>
+    </div>
+
+    <div class="search-contents" id="content"></div>
 
     <div class="head">
       <div class="container">
         <h1 class="moving">
           Best Tools and Deals for Developers and Designers
         </h1>
-        <p><span>April 23, 2021 / By Izuagbe Samuel</span></p>
+        <p><span>April 23, 2021 / Samuel Izuagbe</span></p>
         <p>
           I hope it's a good day where ever you may be and that's all it takes
           to be happy. Why? Because I have a lot of special events going on that
@@ -71,7 +70,7 @@
         <hr />
 
         <h1>Powerful Techniques For Responsive Web Design</h1>
-        <p><span>April 23, 2021</span></p>
+        <p><span>April 23, 2021/ By Samuel Izuagbe</span></p>
         <p>
           Viewing websites with various devices (computer, tablets, smartphones)
           you have to make sure the website look good and responsive in every
@@ -83,7 +82,7 @@
         <hr />
 
         <h1>CSS Vertical Alignment: Tips and Techniques</h1>
-        <p><span>April 23, 2021</span></p>
+        <p><span>April 23, 2021/ By Samuel Izuagbe</span></p>
         <p>
           As large as CSS as a Styling Sheet, centering elements vertically has
           always been a difficult task for many front-end developers. Other than
@@ -96,7 +95,7 @@
         <hr />
 
         <h1>Quick Tips to make your WordPress Site Faster</h1>
-        <p><span>April 23, 2021</span></p>
+        <p><span>April 23, 2021/ By Samuel Izuagbe</span></p>
         <p>
           A slow WordPress website is a burden for your visitors, as well as a
           major problem for viewers. When a visitor opens your website, you have
@@ -108,7 +107,7 @@
         <hr />
 
         <h1>Introduction to GitHub and Git Bash</h1>
-        <p><span>April 23, 2021</span></p>
+        <p><span>April 23, 2021/ By Samuel Izuagbe</span></p>
         <p>
           GitHub is a trending and a very popular public gathering for
           Developers. It's where millions of developers contribute to the future
@@ -118,42 +117,87 @@
         </p>
         <button class="btn"><a href="more5.html">Read More>></a></button>
         <hr />
+
+        <h1>Best Visual Studio Code Extensions</h1>
+        <p><span>June 10, 2021/ By Samuel Izuagbe</span></p>
+        <p>
+          Making web development very interesting and easy for you to use. I
+          have compiled a series of good VSCode Extensions to help easy and make
+          your codes neat, faster to code and more indented. VSCode Extensions
+          let you add languages, debuggers...
+        </p>
+        <button class="btn"><a href="more6.html">Read More>></a></button>
+        <hr />
+
+        <h1>Javascript Event Listeners</h1>
+        <p><span>June 10, 2021/ By Samuel Izuagbe</span></p>
+        <p>
+          There are tons and lots of Javascript Event Listeners. In this post
+          I'll be giving you 20 Event Listeners you must know as a Web
+          Developer. Javascript Event Listeners are procedure in Javascript that
+          awaits an event to occur...
+        </p>
+        <button class="btn"><a href="more7.html">Read More>></a></button>
+        <hr />
+
+        <h1>Ways To earn Money as a Developer</h1>
+        <p><span>June, 10 2021/ By Samuel Izuagbe</span></p>
+        <p></p>
+        <button class="btn"><a href="more8.html">Read More>></a></button>
+        <hr />
         <br />
       </div>
     </div>
 
     <div class="media">
       <p>Share this article:</p>
-      <i class="fab fa-facebook fa-3x"
-        ><a href="https://web.facebook.com/samuel.izuagbe.31"></a
-      ></i>
-      <i class="fab fa-twitter fa-3x"
-        ><a
-          href="https://twitter.com/dgreat_coop/status/1386116299747729408?s=20"
-        ></a
-      ></i>
-      <i class="fab fa-instagram fa-3x"
-        ><a href="https://www.instagram.com/dagreatcoop/"></a
-      ></i>
-      <i class="fab fa-telegram fa-3x"><a href="09069477106"></a></i>
+      <a
+        class="fab fa-facebook fa-3x"
+        href="https://web.facebook.com/samuel.izuagbe.31"
+      ></a>
+      <a
+        class="fab fa-twitter fa-3x"
+        href="https://twitter.com/dgreat_coop/status/1386116299747729408?s=20"
+      ></a>
+      <a
+        class="fab fa-instagram fa-3x"
+        href="https://www.instagram.com/dagreatcoop/"
+      ></a>
+      <a class="fab fa-telegram fa-3x" href="09069477106"></a>
     </div>
     <hr />
 
-    <style>
-
-    </style>
+    <style></style>
 
     <footer class="footer">
       <img src="images/logo.png" alt="My Logo" />
       <h1>
-        Let's Start<br />
-        Something
-        <div>Great.</div>
+        Let's Start<br />Something<br />
+        <span>Great.</span>
       </h1>
-      <p>A creative enterprise in Lagos</p>
-      <b>&copy;2021 Coop Enterprise. All Right Reserved</b>
+      <div class="blog-overview">
+        <h2>Blog Overview</h2>
+        <div class="blog-links">
+          <a href="more1.html"
+            >Best Tools and Deals for Developers and Designers</a
+          ><br />
+          <a href="more2.html">Powerful Techniques For Responsive Web Design</a
+          ><br />
+          <a href="more3.html">CSS Vertical Alignment: Tips and Techniques</a
+          ><br />
+          <a href="more4.html">Quick Tips to make your WordPress Site Faster</a
+          ><br />
+          <a href="more5.html">Introduction to GitHub and Git Bash</a><br />
+          <a href="more6.html">Best Visual Studio Code Extensions</a><br />
+          <a href="more7.html">Javascript Event Listeners</a><br />
+          <a href="more8.html">Ways To earn Money as a Developer</a><br />
+        </div>
+      </div>
+      <div class="footer-closure">
+        <p>A creative enterprise in Lagos</p>
+        <b>&copy;2021 Coop Enterprise. All Right Reserved</b>
+      </div>
     </footer>
+    <script src="js/index.js"></script>
   </body>
-
-
 </html>

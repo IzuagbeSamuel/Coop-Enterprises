@@ -1,62 +1,66 @@
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-:root{
+:root {
   --primary-color: rgb(189, 189, 226);
 }
 
-body{
+body {
   line-height: 1.6;
   color: black;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-hr{
-  border:0.3px solid rgb(230, 227, 227);
+hr {
+  border: 0.3px solid rgb(230, 227, 227);
   width: 100%;
   margin: 0;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-h1, h2{
+h1,
+h2 {
   line-height: 1.2;
   font-weight: 300;
   margin: 10px 0;
 }
 
-p{
+p {
   margin: 10px 0;
   font-size: 16px;
 }
 
 nav {
-  background-color: var(--primary-color);
+  background-color: white;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
   height: 80px;
   width: 100%;
 }
 
 nav img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   line-height: 80px;
   margin-top: 10px;
+  /* animation: spin 10s linear infinite; */
 }
 
 label.logo {
-  font-size: 20px;
+  font-size: 17px;
   line-height: 80px;
   padding: 0 10px;
   font-weight: bold;
+  animation: spin;
 }
 
 nav ul {
@@ -72,11 +76,13 @@ nav ul li {
 
 nav ul li a {
   color: black;
-  font-size: 17px;
-  padding: 7px 15px;
+  line-height: 80px;
+  font-size: 15px;
+  padding: 7px 10px;
 }
 
- nav a.active, nav a:hover {
+nav a.active,
+nav a:hover {
   border-bottom: 3px solid white;
 }
 
@@ -94,66 +100,11 @@ nav ul li a {
   display: none;
 }
 
-@media (max-width: 952px) {
-  label.logo {
-    font-size: 18px;
-  }
-
-  nav {
-    height: 70px;
-  }
-
-  nav img {
-    width: 35px;
-    height: 35px;
-    margin-left: 5px;
-  }
-
-  nav ul li a {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 858px) {
-  .checkbtn {
-    display: block;
-  }
-
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--primary-color);
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-
-  nav ul li a {
-    font-size: 20px;
-  }
-
-   nav a:hover, nav a.active {
-    border-bottom: 3px solid white;
-  }
-
-  #check:checked ~ ul {
-    left: 0;
-  } 
-}
-
 .alert {
   padding: 20px;
   background-color: var(--primary-color);
   color: black;
-  margin-top: 50px;
+  margin-top: 30px;
   transition: 1.5s;
   text-align: center;
 }
@@ -166,13 +117,14 @@ nav ul li a {
   line-height: 20px;
   cursor: pointer;
   transition: 2s;
+  animation: spin 10s linear infinite;
 }
 
-.closebtn:hover{
+.closebtn:hover {
   color: white;
 }
 
-.btn{
+.btn {
   display: inline-block;
   padding: 10px;
   cursor: pointer;
@@ -180,22 +132,22 @@ nav ul li a {
   color: black;
   border: none;
   border-radius: 5px;
-  margin-bottom: 20px ;
+  margin-bottom: 20px;
 }
 
-.btn a{
+.btn a {
   color: black;
 }
 
-.btn-outline{
+.btn-outline {
   background-color: black;
 }
 
-.btn:hover{
-  transform: scale(0.90);
+.btn:hover {
+  transform: scale(0.9);
 }
 
-.header .moving{
+.header .moving {
   padding-top: 60px;
 }
 
@@ -208,42 +160,80 @@ nav ul li a {
   display: none;
   color: white;
   width: 100%;
-  padding: 2px;
+  height: 100%;
+  padding: 1px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-content a {
   color: white;
+  padding: 2px;
   display: block;
+  font-size: 16px;
 }
 
 .show {
   display: block;
 }
 
-.head{
+.search-box {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.search-box .search-content input {
+  width: 300px;
+  height: 30px;
+  border-radius: 40px;
+}
+
+.search-contents {
+  text-align: center;
+  padding: 0;
+  margin: 20px;
+  background-color: white;
+  /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2); */
+}
+
+.search-contents li {
+  list-style: none;
+}
+
+.search-contents li a {
+  padding: 0;
+  margin: 0;
+  color: black;
+  padding-top: 4px;
+}
+
+.search-contents li a:hover {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.head {
   margin: 20px;
   padding-top: 50px;
 }
 
-.head p{
+.head p {
   color: black;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.head h1{
+.head h1 {
   padding-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
-
+  animation: fontColor 5s ease-in-out infinite;
 }
 
-.head span{
+.head span {
   color: blue;
 }
 
-.head button{
+.head button {
   margin-left: 20px;
 }
 
@@ -253,7 +243,7 @@ nav ul li a {
   padding: 5px;
 }
 
-.media i{
+.media i {
   color: blue;
   padding: 10px;
 }
@@ -262,30 +252,30 @@ nav ul li a {
   font-size: 19px;
 }
 
-.media a{
-   padding: 1px;
+.media a {
+  padding: 1px;
 }
 
-
-.comment{
+.comment {
   margin: 20px;
   padding-top: 50px;
   text-align: center;
 }
 
-.comment p{
+.comment p {
   color: black;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.comment h3{
+.comment h3 {
   padding-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.form-comment-control textarea, input {
+.form-comment-control textarea,
+input {
   border: 2px solid var(--primary-color);
   border-radius: 20px;
   padding: 20px;
@@ -301,9 +291,9 @@ nav ul li a {
 }
 
 .comment2 {
-   padding: 10px;
-   margin-bottom: 20px;
-   margin-top: 0;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .user-name {
@@ -312,32 +302,81 @@ nav ul li a {
   margin-top: 0;
 }
 
-
-.footer{
+.footer {
   background-color: var(--primary-color);
   margin-top: 20px;
   width: 100%;
+  height: 100%;
 }
 
-.footer img{
+.footer img {
   width: 80px;
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.footer h1, p{
+.footer h1 {
   text-align: left;
   margin-left: 30px;
   color: black;
 }
 
-.footer div{
+.footer span {
   text-decoration: underline black;
 }
 
-.footer b{
+.footer b {
   text-align: center;
-  margin-left: 30px ;
+  margin-left: 30px;
   color: black;
   font-size: 14px;
+}
+
+.footer .footer-closure {
+  text-align: center;
+}
+
+.footer .blog-overview {
+  padding: 10px;
+  margin: 30px;
+}
+
+.footer .blog-overview h2 {
+  text-align: center;
+  text-decoration: underline white;
+}
+
+.footer .blog-overview .blog-links {
+  text-align: center;
+}
+
+.footer .blog-overview .blog-links a {
+  color: black;
+  text-align: center;
+  padding-top: 3px;
+  font-size: 14px;
+}
+
+.footer .blog-overview .blog-links a:hover {
+  border-bottom: 2px solid white;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fontColor {
+  50% {
+    color: rgb(55, 55, 158);
+  }
+
+  100% {
+    color: black;
+  }
 }
