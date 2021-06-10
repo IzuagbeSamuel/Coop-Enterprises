@@ -12,3 +12,16 @@ function showBlogs() {
   <li><a href="more7.html">Javascript Event Listeners</a></li>
   <li><a href="more8.html">Ways To earn Money as a Developer</a></li>`;
 }
+
+window.onclick = function (e) {
+  if (!e.target.matches('#search')) {
+    var blogs = searchContent.innerHTML;
+    var i;
+    for (i = 0; i < blogs.length; i++) {
+      var openBlog = blogs[i];
+      if (openBlog.contain('li')) {
+        openBlog.remove('li');
+      }
+    }
+  }
+};
