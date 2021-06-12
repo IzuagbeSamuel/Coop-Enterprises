@@ -1,4 +1,9 @@
 {
   "liveServer.settings.port": 5501,
-  "python.pythonPath": "C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
+  "python.pythonPath": "C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+  "cSpell.ignoreWords": [
+    "autocom",
+    "box",
+    "sugg"
+  ]
 }

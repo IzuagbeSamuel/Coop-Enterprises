@@ -17,6 +17,18 @@
     font-size: 14px;
     padding: 7px 10px;
   }
+
+  .wrapper .search-input {
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .autocom-box li {
+    padding: 3px 5px;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 858px) {
@@ -52,5 +64,17 @@
 
   #check:checked ~ ul {
     left: 0;
+  }
+
+  .wrapper .search-input {
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .autocom-box li {
+    padding: 3px 5px;
+    font-size: 14px;
   }
 }
