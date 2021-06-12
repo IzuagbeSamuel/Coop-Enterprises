@@ -1,49 +1,48 @@
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-
-hr{
+hr {
   border: 1px solid rgb(230, 227, 227);
   width: 100%;
   margin: 0;
 }
 
-
-body{
+body {
   line-height: 1.6;
   color: black;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-:root{
-  --primary-color:rgb(189, 189, 226)
+:root {
+  --primary-color: rgb(189, 189, 226);
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-h1, h2{
+h1,
+h2 {
   line-height: 1.2;
   font-weight: 300;
   margin: 10px 0;
 }
 
-p{
+p {
   margin: 10px 0;
   font-size: 16px;
 }
 
-
 nav {
-  background-color: var(--primary-color);
+  background-color: white;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
   height: 80px;
   width: 100%;
 }
@@ -79,7 +78,8 @@ nav ul li a {
   padding: 7px 15px;
 }
 
- nav a.active, nav a:hover {
+nav a.active,
+nav a:hover {
   border-bottom: 3px solid white;
 }
 
@@ -127,9 +127,8 @@ nav ul li a {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 40%;
+  width: 50%;
 }
-
 
 @media (max-width: 952px) {
   label.logo {
@@ -155,7 +154,7 @@ nav ul li a {
   }
 
   .showcase img {
-    width: 60%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -175,7 +174,7 @@ nav ul li a {
     top: 80px;
     left: -100%;
     text-align: center;
-    transition: all .5s;
+    transition: all 0.5s;
   }
 
   nav ul li {
@@ -188,23 +187,23 @@ nav ul li a {
     font-size: 20px;
   }
 
-   nav a:hover, nav a.active {
+  nav a:hover,
+  nav a.active {
     border-bottom: 3px solid white;
   }
 
   #check:checked ~ ul {
     left: 0;
-  } 
+  }
 
   .showcase li {
     font-size: 18px;
   }
 
   .showcase img {
-    width: 60%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;
   }
 }
-

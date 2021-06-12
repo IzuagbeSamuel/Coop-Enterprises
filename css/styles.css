@@ -97,7 +97,7 @@ nav a:hover {
 }
 
 #check {
-  display: none;
+  display: one;
 }
 
 .alert {
@@ -178,7 +178,7 @@ nav a:hover {
 
 .wrapper {
   max-width: 450px;
-  margin: 100px auto;
+  margin: 70px auto;
 }
 
 .wrapper .search-input {
@@ -246,7 +246,7 @@ nav a:hover {
 
 .head {
   margin: 20px;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .head p {
@@ -269,6 +269,18 @@ nav a:hover {
 .head button {
   margin-left: 20px;
 }
+/* 
+.head img {
+  width: 70px;
+  left: 0;
+  border-radius: 50%;
+}
+
+.head .home-float {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+} */
 
 .media {
   padding-bottom: 400px;

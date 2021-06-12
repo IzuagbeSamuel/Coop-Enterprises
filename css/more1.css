@@ -1,52 +1,51 @@
 /* Global Declaration */
 
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-
-hr{
+hr {
   border: 1px solid rgb(230, 227, 227);
   width: 100%;
   margin: 0;
 }
 
-
-body{
+body {
   line-height: 1.6;
   color: black;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-:root{
-  --primary-color:rgb(189, 189, 226)
+:root {
+  --primary-color: rgb(189, 189, 226);
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-a:hover{
-  transform: scale(0.90)
+a:hover {
+  transform: scale(0.9);
 }
 
-a.active{
+a.active {
   border-bottom: 2px solid black;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-h1, h2{
+h1,
+h2 {
   line-height: 1.2;
   font-weight: 300;
   margin: 10px 0;
 }
 
-p{
+p {
   margin: 10px 0;
   font-size: 16px;
 }
@@ -54,7 +53,8 @@ p{
 /* Logo Image */
 
 nav {
-  background-color: var(--primary-color);
+  background-color: white;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
   height: 80px;
   width: 100%;
 }
@@ -90,7 +90,8 @@ nav ul li a {
   padding: 7px 15px;
 }
 
- nav a.active, nav a:hover {
+nav a.active,
+nav a:hover {
   border-bottom: 3px solid white;
 }
 
@@ -141,7 +142,7 @@ nav ul li a {
     top: 80px;
     left: -100%;
     text-align: center;
-    transition: all .5s;
+    transition: all 0.5s;
   }
 
   nav ul li {
@@ -154,17 +155,18 @@ nav ul li a {
     font-size: 20px;
   }
 
-   nav a:hover, nav a.active {
+  nav a:hover,
+  nav a.active {
     border-bottom: 3px solid black;
   }
 
   #check:checked ~ ul {
     left: 0;
-  } 
+  }
 }
 
 /* Body of Blog */
-.head{
+.head {
   margin: 20px;
   padding-top: 50px;
 }
@@ -180,7 +182,7 @@ nav ul li a {
   margin-right: 20px;
 }
 
-.head span{
+.head span {
   color: blue;
 }
 
@@ -191,13 +193,13 @@ nav ul li a {
   margin-left: 5px;
 }
 
-.head li{
+.head li {
   font-size: 25px;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.head img{
+.head img {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -205,7 +207,7 @@ nav ul li a {
 }
 
 /* Button */
-.btn{
+.btn {
   display: inline-block;
   padding: 10px;
   cursor: pointer;
@@ -213,23 +215,23 @@ nav ul li a {
   color: black;
   border: none;
   border-radius: 5px;
-  margin-bottom:15px ;
+  margin-bottom: 15px;
 }
 
-.btn a{
+.btn a {
   color: black;
   text-align: center;
 }
 
-.btn-outline{
+.btn-outline {
   background-color: black;
 }
 
-.btn:hover{
-  transform: scale(0.90);
+.btn:hover {
+  transform: scale(0.9);
 }
 
-.previous{
+.previous {
   text-align: center;
 }
 
@@ -240,7 +242,7 @@ nav ul li a {
   padding: 5px;
 }
 
-.media i{
+.media i {
   color: blue;
   padding: 10px;
 }
@@ -249,8 +251,8 @@ nav ul li a {
   font-size: 19px;
 }
 
-.media a{
-   padding: 1px;
+.media a {
+  padding: 1px;
 }
 
 #myBtn {
@@ -273,37 +275,33 @@ nav ul li a {
   background-color: #555;
 }
 
-
-
 /* Footer */
-.footer{
+.footer {
   background-color: var(--primary-color);
   margin-top: 20px;
   width: 100%;
 }
 
-.footer img{
+.footer img {
   width: 80px;
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.footer h1, p{
+.footer h1,
+p {
   text-align: left;
   margin-left: 30px;
   color: black;
 }
 
-.footer div{
+.footer div {
   text-decoration: underline black;
 }
 
-.footer b{
+.footer b {
   text-align: center;
-  margin-left: 30px ;
+  margin-left: 30px;
   color: black;
   font-size: 14px;
 }
-
-
-
