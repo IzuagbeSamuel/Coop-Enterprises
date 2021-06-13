@@ -16,22 +16,35 @@
   <!-- Body Starts Here -->
   <body>
     <!-- Navbar -->
-    <nav>
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <label class="logo"
-        ><img src="images/logo.png" alt="" />Coop Enterprise Blog</label
-      >
-      <ul id="nav">
-        <li><a class="active" href="#">Blogs</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="navbar">
+      <div class="container flex">
+        <h1 class="logo">
+          <img src="images/logo.png" alt="" />
+        </h1>
+        <nav>
+          <a href="#" class="fas fa-bars" onclick="openSlideMenu()"></a>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <div class="bar"></div>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
-    <div class="alert">
+    <div id="side-menu" class="side-nav">
+      <ul>
+        <li>
+          <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        </li>
+        <li><a href="index.html" class="active">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+
+    <div class="alert" id="alert">
       <span class="closebtn" onclick="this.parentElement.style.display='none'"
         >&times;</span
       >Welcome To My Blog

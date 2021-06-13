@@ -40,71 +40,107 @@ p {
   font-size: 16px;
 }
 
-nav {
+.logo img {
+  width: 40px;
+  margin: 10px;
+  margin-left: 40px;
+  line-height: 50px;
+}
+
+.navbar {
   background-color: white;
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
   height: 80px;
-  width: 100%;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
-nav img {
-  width: 30px;
-  height: 30px;
-  line-height: 80px;
-  margin-top: 10px;
-  /* animation: spin 10s linear infinite; */
-}
+/* .navbar h1 {
+  font-size: 20px;
+  align-items: center;
+  line-height: 50px;
+} */
 
-label.logo {
-  font-size: 17px;
-  line-height: 80px;
-  padding: 0 10px;
-  font-weight: bold;
-  animation: spin;
-}
-
-nav ul {
-  float: right;
-  margin-right: 20px;
-}
-
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
+.navbar a {
+  color: black;
+  padding: 10px;
   margin: 0 5px;
 }
 
-nav ul li a {
-  color: black;
-  line-height: 80px;
-  font-size: 15px;
-  padding: 7px 10px;
-}
-
-nav a.active,
-nav a:hover {
-  border-bottom: 3px solid black;
-}
-
-.checkbtn {
-  font-size: 25px;
+.navbar a:hover {
   color: var(--primary-color);
-  float: right;
-  line-height: 80px;
-  margin-right: 20px;
-  cursor: pointer;
+}
+
+.navbar .bar {
+  display: noe;
+}
+
+.navbar a.active {
+  color: var(--primary-color);
+}
+
+.navbar ul {
   display: none;
 }
 
-#check {
-  display: one;
+.navbar nav a {
+  font-size: 30px;
+  color: var(--primary-color);
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-nav {
+  float: right;
+  display: block;
+  height: 400px;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s ease;
+}
+
+.side-nav a {
+  padding: 10px 10px 10px 30px;
+  font-size: 17px;
+  display: block;
+  transition: 0.3s ease;
+}
+
+.side-nav a:hover {
+  color: white;
+}
+
+.side-nav a.active {
+  color: white;
+}
+
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 40px;
+  float: right;
+  color: white;
 }
 
 .alert {
   padding: 20px;
   background-color: var(--primary-color);
   color: black;
-  margin-top: 30px;
+  margin-top: 100px;
   transition: 1.5s;
   text-align: center;
 }
@@ -179,6 +215,7 @@ nav a:hover {
 .wrapper {
   max-width: 450px;
   margin: 70px auto;
+  padding-top: 100px;
 }
 
 .wrapper .search-input {
@@ -246,7 +283,7 @@ nav a:hover {
 
 .head {
   margin: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .head p {
@@ -256,7 +293,7 @@ nav a:hover {
 }
 
 .head h1 {
-  padding-top: 20px;
+  padding-top: 10px;
   margin-left: 20px;
   margin-right: 20px;
   animation: fontColor 5s ease-in-out infinite;
