@@ -1,6 +1,11 @@
 @media (max-width: 952px) {
+  .body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
   .logo img {
-    margin-left: 50px;
+    margin-left: 20px;
   }
 
   .alert {
@@ -33,6 +38,11 @@
 }
 
 @media (max-width: 858px) {
+  .body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
   .wrapper .search-input {
     width: 80%;
     display: block;

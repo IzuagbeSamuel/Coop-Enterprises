@@ -40,6 +40,11 @@ p {
   font-size: 16px;
 }
 
+.body {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
 .logo img {
   width: 40px;
   margin: 10px;
@@ -52,6 +57,9 @@ p {
   overflow: hidden;
   height: 80px;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 /* .navbar h1 {
@@ -100,7 +108,7 @@ p {
 .side-nav {
   float: right;
   display: block;
-  height: 400px;
+  height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
@@ -215,11 +223,11 @@ p {
 .wrapper {
   max-width: 450px;
   margin: 70px auto;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .wrapper .search-input {
-  position: relative;
+  /* position: relative; */
   background-color: white;
   width: 100%;
   border-radius: 5px;
@@ -236,19 +244,19 @@ p {
   font-size: 18px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
-
+/* 
 .search-input .icon {
   height: 55px;
   width: 55px;
   line-height: 43px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 54%;
+  right: 35%;
   text-align: center;
   font-size: 18px;
   color: var(--primary-color);
   cursor: pointer;
-}
+} */
 
 .search-input .autocom-box {
   padding: 0;
@@ -279,6 +287,14 @@ p {
 
 .autocom-box li:hover {
   background-color: #efefef;
+}
+
+.float-undraw {
+  float: left;
+}
+
+.float-undraw img {
+  width: 70px;
 }
 
 .head {
@@ -342,50 +358,27 @@ p {
   margin: 30px;
 }
 
-.comment {
-  margin: 20px;
-  padding-top: 50px;
-  text-align: center;
+/* Comment Section */
+#response {
+  margin-top: 40px;
 }
 
-.comment p {
-  color: black;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.comment h3 {
-  padding-top: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.form-comment-control textarea,
-input {
+#response input[type='text'],
+#response input[type='email'],
+#response textarea {
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
   border: 2px solid var(--primary-color);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -khtml-border-radius: 20px;
   border-radius: 20px;
-  padding: 20px;
+  line-height: 1.4rem;
+  padding: 8px;
   outline: none;
-}
-
-.comment-body {
-  padding: 20px;
-  margin-top: 0;
-  margin: 20px;
-  border: 2px solid var(--primary-color);
-  border-radius: 20px;
-}
-
-.comment2 {
-  padding: 10px;
-  margin-bottom: 20px;
-  margin-top: 0;
-}
-
-.user-name {
-  float: right;
-  margin-right: 30px;
-  margin-top: 0;
 }
 
 .footer {
