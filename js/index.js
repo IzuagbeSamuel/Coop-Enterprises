@@ -50,3 +50,20 @@ function closeSlideMenu() {
   document.getElementById('side-menu').style.width = '0';
   document.getElementById('alert').style.marginRight = '0';
 }
+
+function closeEmailCnt() {
+  document.getElementById('email-content').style.display = 'none';
+}
+
+let emailCnt = document.getElementById('email-content');
+window.onscroll = function () {
+  scrollFunction();
+};
+
+// function scrollFunction() {
+//   if (document.body.scroll > 10 || document.documentElement.scrollTop > 15) {
+//     emailCnt.style.display = 'block';
+//   } else {
+//     emailCnt.style.display = 'none';
+//   }
+// }

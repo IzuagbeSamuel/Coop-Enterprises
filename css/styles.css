@@ -335,6 +335,57 @@ p {
   padding: 3px;
 } */
 
+.email-content {
+  background-color: var(--primary-color);
+  overflow: hidden;
+  height: 300px;
+  position: fixed;
+  top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: block;
+  z-index: 1;
+  text-align: center;
+  padding: 30px;
+  border-radius: 40px;
+  display: none;
+}
+
+.email-content .btn {
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.email-content h3 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.email-content span {
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 40px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 2s;
+  animation: spin 10s linear infinite;
+}
+
+.email-content .email-info {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.email-content .email-info input[type='text'],
+.email-content .email-info input[type='email'] {
+  padding: 10px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  width: 50%;
+}
 .media {
   padding-bottom: 400px;
   padding-top: 300px;

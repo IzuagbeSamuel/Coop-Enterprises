@@ -1,7 +1,7 @@
 @media (max-width: 952px) {
   .body {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .logo img {
@@ -34,6 +34,30 @@
   .autocom-box li {
     padding: 3px 5px;
     font-size: 14px;
+  }
+
+  .email-content {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .email-content h3 {
+    font-size: 13px;
+    padding-bottom: 20px;
+  }
+
+  .email-content span {
+    font-size: 30px;
+  }
+
+  .email-content .email-info {
+    padding-bottom: 20px;
+  }
+
+  .email-content .email-info input[type='text'],
+  .email-content .email-info input[type='email'] {
+    padding: 8px;
+    width: 100%;
   }
 }
 

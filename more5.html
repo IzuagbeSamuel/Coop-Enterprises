@@ -5,191 +5,244 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/more5.css" />
-    <script
-      src="https://kit.fontawesome.com/a15138ce98.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/a15138ce98.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/queries.css" />
     <script src="js/index.js"></script>
     <title>Coop Enterprise</title>
   </head>
   <!-- Body Starts Here -->
   <body>
     <!-- Navbar -->
-    <nav>
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <label class="logo"
-        ><img src="images/logo.png" alt="" />Coop Enterprise Blog</label
-      >
+    <div class="navbar">
+      <div class="container flex">
+        <h1 class="logo">
+          <img src="images/logo.png" alt="" />
+        </h1>
+        <nav>
+          <a href="#" class="fas fa-bars" onclick="openSlideMenu()"></a>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <div class="bar"></div>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div id="side-menu" class="side-nav">
       <ul>
-        <li><a class="active" href="index.html">Blogs</a></li>
-        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        </li>
+        <div class="dropdown">
+          <li><a href="index.html" class="active">Blogs</a></li>
+          <div class="dropdown-content">
+            <li><a href="more1.html">Best Tools and Deals for Developers and Designers</a><br /></li>
+            <li><a href="more3.html">CSS Vertical Alignment: Tips and Techniques</a></li>
+            <li><a href="more2.html">Powerful Techniques For Responsive Web Design</a></li>
+            <li><a href="more4.html">Quick Tips to make your WordPress Site Faster</a></li>
+            <li><a href="more5.html">Introduction to GitHub and Git Bash</a></li>
+            <li><a href="more6.html">Best Visual Studio Code Extensions</a></li>
+            <li><a href="more7.html">Javascript Event Listeners</a></li>
+            <li><a href="more8.html">Ways To earn Money as a Developer</a></li>
+          </div>
+        </div>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
-    </nav>
+    </div>
+    <!-- Navbar Ends-->
 
-    <div class="showcase">
-      <h1>Introduction to GitHub and Git</h1>
-      <p><span>April 23, 2021 | By Izuagbe Samuel</span></p>
-      <p>
-        GitHub is a trending and a very popular public gathering for Developers.
-        It's where millions of developers contribute to the future of software,
-        contributing to the open source of millions of public and private codes.
-        Using Git Bash as an application for Microsoft Windows environment to
-        make changes to you GitHub account.
-      </p>
-      <br />
-      <hr />
-      <br />
+    <!-- Alert Starts -->
+    <div class="alert" id="alert"><span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>Welcome To My Blog</div>
+    <!-- Alert Ends -->
 
-      <b><h1>Git</h1></b>
-      <p>
-        Is a command prompt navigator or a control system that allows users to
-        navigate through your system to make files, remove files, make a
-        directory, and take snapshot of our codes to GitHub.
-      </p>
+    <!-- Search Box -->
+    <div class="wrapper">
+      <div class="search-input">
+        <input type="text" placeholder="Type to search..." />
+        <div class="autocom-box">
+          <li>Best Tools for Developers and Designers</li>
+          <li>Powerful Techniques For Responsive Web Design</li>
+          <li>CSS Vertical Alignment: Tips and Techniques</li>
+          <li>Quick Tips to make your WordPress Site Faster</li>
+          <li>Introduction to GitHub and Git Bash</li>
+          <li>Best Visual Studio Code Extensions</li>
+          <li>Javascript Event Listeners</li>
+          <li>How To earn Money as a Developer</li>
+        </div>
+        <!-- <div class="icon"><i class="fas fa-search"></i></div> -->
+      </div>
+    </div>
 
-      <p>In this blog I'll be talking about various Git commands:</p>
-      <ul>
-        <b
-          ><li>git config</li>
-          <li>git init</li>
-          <li>git add</li>
-          <li>git status</li>
-          <li>git rm</li>
-          <li>git log</li>
-          <li>git show</li>
-          <li>git branch</li>
-          <li>git clone</li>
-          <li>git commit</li>
-          <!-- <li>git diff</li> -->
-          <li>git reset</li>
-          <li>git tag</li>
-          <li>git checkout</li>
-          <li>git pull</li>
-          <li>git merge</li>
-          <li>git remote</li>
-          <li>git stash</li>
+    <div class="body">
+      <!-- Search Ends -->
+      <div class="showcase">
+        <h1>Introduction to GitHub and Git</h1>
+        <p><span>April 23, 2021 | By Izuagbe Samuel</span></p>
+        <p>
+          GitHub is a trending and a very popular public gathering for Developers. It's where millions of developers contribute to the future of
+          software, contributing to the open source of millions of public and private codes. Using Git Bash as an application for Microsoft Windows
+          environment to make changes to you GitHub account.
+        </p>
+        <br />
+        <hr />
+        <br />
+
+        <b><h1>Git</h1></b>
+        <p>
+          Is a command prompt navigator or a control system that allows users to navigate through your system to make files, remove files, make a
+          directory, and take snapshot of our codes to GitHub.
+        </p>
+
+        <p>In this blog I'll be talking about various Git commands:</p>
+        <ul>
+          <b
+            ><li>git config</li>
+            <li>git init</li>
+            <li>git add</li>
+            <li>git status</li>
+            <li>git rm</li>
+            <li>git log</li>
+            <li>git show</li>
+            <li>git branch</li>
+            <li>git clone</li>
+            <li>git commit</li>
+            <!-- <li>git diff</li> -->
+            <li>git reset</li>
+            <li>git tag</li>
+            <li>git checkout</li>
+            <li>git pull</li>
+            <li>git merge</li>
+            <li>git remote</li>
+            <li>git stash</li>
+            <p>We'll also deal with some commands that helps us navigate through the computer:</p>
+            <li>mkdir</li>
+            <li>touch</li>
+            <li>rmdir</li>
+            <li>cd</li>
+            <li>pwd</li>
+            <li>cd ../</li>
+            <li>ls -a</li></b
+          >
+        </ul>
+        <br />
+        <hr />
+        <br />
+
+        <b><h1>Git Commands</h1></b>
+        <ul>
+          <b><li>git config</li></b>
+          <p>This command sets the author name and email address globally when commit.</p>
+          <b
+            ><p>Command Line: git config --global user.name "[name]"</p>
+            <p>Command Line: git config --global user.email "[email]"</p></b
+          >
           <p>
-            We'll also deal with some commands that helps us navigate through
-            the computer:
+            When we commit our codes, (I know you're wondering what commit is we'll talk more about it later in this blog) we want our names or
+            credential to be authored by us. <b>git config</b> sets our names and email to be the author of any code we commit.
           </p>
-          <li>mkdir</li>
-          <li>touch</li>
-          <li>rmdir</li>
-          <li>cd</li>
-          <li>pwd</li>
-          <li>cd ../</li>
-          <li>ls -a</li></b
-        >
-      </ul>
-      <br />
-      <hr />
-      <br />
+          <img src="images/git1.png" alt="" />
+          <br />
+          <hr />
+          <br />
 
-      <b><h1>Git Commands</h1></b>
-      <ul>
-        <b><li>git config</li></b>
-        <p>This command sets the author name and email address globally when commit.</p>
-        <b><p>Command Line: git config --global user.name "[name]"</p>
-          <p>Command Line: git config --global user.email "[email]"</p></b>
-        <p>When we commit our codes, (I know you're wondering what commit is we'll talk more about it later in this blog) we want our names or credential to be authored by us. <b>git config</b> sets our names and email to be the author of any code we commit.</p>
-        <img src="images/git1.png" alt="" />
-        <br />
-        <hr />
-        <br />
+          <b><li>git init</li></b>
+          <p>
+            This command is used to start a repository. Using <b>git init</b> means initializing the git files in you directory or folder when
+            starting a repository.
+          </p>
+          <p><b>Command Line: git init</b></p>
+          <img src="images/git2.png" alt="" />
+          <br />
+          <hr />
+          <br />
 
-        <b><li>git init</li></b>
-        <p>This command is used to start a repository. Using <b>git init</b> means initializing the git files in you directory or folder when starting a repository.</p>
-        <p><b>Command Line: git init</b></p>
-        <img src="images/git2.png" alt="" />
-        <br />
-        <hr />
-        <br />
+          <b><li>git add</li></b>
+          <p>This command add a file to the staging area. This is normally done after you might have edited that file.</p>
+          <b><p>Command Line: git add [file name]</p></b>
+          <img src="images/git3.png" alt="" />
+          <br />
+          <b><p>Command Line: git add .</p></b>
+          <p>This command adds more than one files to the staging area</p>
+          <img src="images/add.png" alt="" />
+          <br />
+          <hr />
+          <br />
 
-        <b><li>git add</li></b>
-        <p>This command add a file to the staging area. This is normally done after you might have edited that file. </p>
-        <b><p>Command Line: git add [file name]</p></b>
-        <img src="images/git3.png" alt="" />
-        <br />
-        <b><p>Command Line: git add .</p></b>
-        <p>This command adds more than one files to the staging area</p>
-        <img src="images/add.png" alt="">
-        <br>
-        <hr />
-        <br />
+          <b><li>git commit</li></b>
+          <p>This command records or snapshots the file permanently in the version history.</p>
+          <b><p>Command Line: git commit -m "[Your commit message goes here]"</p></b>
+          <img src="images/commit.png" alt="" />
+          <br />
+          <hr />
+          <br />
 
-        <b><li>git commit</li></b>
-        <p>This command records or snapshots the file permanently in the version history.</p>
-        <b><p>Command Line: git commit -m "[Your commit message goes here]"</p></b>
-        <img src="images/commit.png" alt="">
-        <br>
-        <hr>
-        <br>
+          <b><li>git status</li></b>
+          <p>This command list out all the files that have been committed.</p>
+          <b><p>Command Line: git status</p></b>
+          <img src="images/status.png" alt="" />
+          <br />
+          <hr />
+          <br />
 
-        <b><li>git status</li></b>
-        <p>This command list out all the files that have been committed.</p>
-        <b><p>Command Line: git status</p></b>
-        <img src="images/status.png" alt="">
-        <br>
-        <hr>
-        <br>
+          <b><li>git rm</li></b>
+          <p>This command deletes the file from your working directory and stages the deletion.</p>
+          <b><p>Command Line: git rm [file name]</p></b>
+          <img src="images/rm.png" alt="" />
+          <br />
+          <hr />
+          <br />
 
-        <b><li>git rm</li></b>
-        <p>This command deletes the file from your working directory and stages the deletion.</p>
-        <b><p>Command Line: git rm [file name]</p></b>
-        <img src="images/rm.png" alt="">
-        <br>
-        <hr>
-        <br>
+          <b><li>git log</li></b>
+          <p>
+            This command is basically used to list the version history for the current branch. It also shows the date, time, author, branch, and the
+            commit message you made.
+          </p>
+          <b><p>Command Line: git log</p></b>
+          <img src="images/log.png" alt="" />
+          <br />
+          <hr />
+          <br />
 
-        <b><li>git log</li></b>
-        <p>This command is basically used to list the version history for the current branch. It also shows the date, time, author, branch, and the commit message you made. </p>
-        <b><p>Command Line: git log</p></b>
-        <img src="images/log.png" alt="">
-        <br>
-        <hr>
-        <br>
+          <b><li>git show</li></b>
+          <p>This command shows the changes of the specified commit and the metadata.</p>
+          <b><p>Command Line: git show [ The commit you made ]</p></b>
+          <img src="images/show.png" alt="" />
+          <br />
+          <hr />
+          <br />
 
-        <b><li>git show</li></b>
-        <p>This command shows the changes of the specified commit and the metadata.</p>
-        <b><p>Command Line: git show [ The commit you made ]</p></b>
-        <img src="images/show.png" alt="">
-        <br>
-        <hr>
-        <br>
+          <b><li>git branch</li></b>
+          <p>This command lists all the local branches in the repository.</p>
+          <b><p>Command Line: git branch</p></b>
+          <img src="images/branch (2).png" alt="" />
+          <br />
+          <p>This command creates a new branch.</p>
+          <b><p>Command Line: git branch [ Branch name ]</p></b>
+          <img src="images/branch (3).png" alt="" />
+          <br />
+          <p>This command deletes a branch.</p>
+          <b><p>Command Line: git branch -d [ Branch name ]</p></b>
+          <img src="images/branch (4).png" alt="" />
+          <br />
+          <hr />
+          <br />
 
-        <b><li>git branch</li></b>
-        <p>This command lists all the local branches in the repository.</p>
-        <b><p>Command Line: git branch</p></b>
-        <img src="images/branch (2).png" alt="">
-        <br>
-        <p>This command creates a new branch.</p>
-        <b><p>Command Line: git branch [ Branch name ] </p></b>
-        <img src="images/branch (3).png" alt="">
-        <br>
-        <p>This command deletes a branch.</p>
-        <b><p>Command Line: git branch -d [ Branch name ]</p></b>
-        <img src="images/branch (4).png" alt="">
-        <br>
-        <hr>
-        <br>
-
-        <b><li>git checkout</li></b>
-        <p>This command is used to sign in from one branch to another.</p>
-        <b><p>Command Line: git checkout [ Branch name ]</p></b>
-        <img src="images/checkouts (2).png" alt="">
-        <br>
-        <p>This command creates a new branch and also switches to it.</p>
-        <b><p>Command Line: git checkout -b [ Branch name]</p></b>
-        <img src="images/checkouts (3).png" alt="">
-        <br>
-        <hr>
-        <br>
-<!-- 
+          <b><li>git checkout</li></b>
+          <p>This command is used to sign in from one branch to another.</p>
+          <b><p>Command Line: git checkout [ Branch name ]</p></b>
+          <img src="images/checkouts (2).png" alt="" />
+          <br />
+          <p>This command creates a new branch and also switches to it.</p>
+          <b><p>Command Line: git checkout -b [ Branch name]</p></b>
+          <img src="images/checkouts (3).png" alt="" />
+          <br />
+          <hr />
+          <br />
+          <!-- 
         <b><li>git diff</li></b>
         <p> This shows the differences which are not yet staged in the working file.</p>
         <b><p>Command Line: git diff </p></b>
@@ -201,14 +254,15 @@
         <hr>
         <br> -->
 
-        <b><li>git tag</li></b>
-        <p> This command is used to give tags to the specified commit. </p>
-        <b><p>Command Line: git tag [Commit ID]</p></b>
-        <img src="images/tag.png" alt="">
-        <br>
-        <hr>
-        <br>
-      </ul>
+          <b><li>git tag</li></b>
+          <p>This command is used to give tags to the specified commit.</p>
+          <b><p>Command Line: git tag [Commit ID]</p></b>
+          <img src="images/tag.png" alt="" />
+          <br />
+          <hr />
+          <br />
+        </ul>
+      </div>
     </div>
   </body>
 </html>
