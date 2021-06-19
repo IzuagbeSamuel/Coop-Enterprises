@@ -125,6 +125,7 @@ p {
   font-size: 17px;
   display: block;
   transition: 0.3s ease;
+  color: black;
 }
 
 .side-nav a:hover {
@@ -306,6 +307,7 @@ p {
   color: black;
   margin-left: 20px;
   margin-right: 20px;
+  max-width: 100%;
 }
 
 .head h1 {
@@ -349,7 +351,6 @@ p {
   text-align: center;
   padding: 30px;
   border-radius: 40px;
-  display: none;
 }
 
 .email-content .btn {

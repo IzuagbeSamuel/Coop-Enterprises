@@ -16,21 +16,48 @@
   <!-- Body Starts Here -->
   <body>
     <!-- Navbar -->
-    <nav>
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <label class="logo"
-        ><img src="images/logo.png" alt="" />Coop Enterprise Blog</label
-      >
-      <ul>
-        <li><a class="active" href="index.html">Blogs</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="navbar">
+      <div class="container flex">
+        <h1 class="logo">
+          <img src="images/logo.png" alt="" />
+        </h1>
+        <nav>
+          <a href="#" class="fas fa-bars" onclick="openSlideMenu()"></a>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <div class="bar"></div>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
+    <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+      <ul>
+        <li>
+        </li>
+        <div class="dropdown">
+          <li><a href="index.html" class="active">Blogs</a></li>
+          <div class="dropdown-content">
+            <li><a href="more1.html">Best Tools and Deals for Developers and Designers</a><br /></li>
+            <li><a href="more3.html">CSS Vertical Alignment: Tips and Techniques</a></li>
+            <li><a href="more2.html">Powerful Techniques For Responsive Web Design</a></li>
+            <li><a href="more4.html">Quick Tips to make your WordPress Site Faster</a></li>
+            <li><a href="more5.html">Introduction to GitHub and Git Bash</a></li>
+            <li><a href="more6.html">Best Visual Studio Code Extensions</a></li>
+            <li><a href="more7.html">Javascript Event Listeners</a></li>
+            <li><a href="more8.html">Ways To earn Money as a Developer</a></li>
+          </div>
+        </div>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+    <!-- Navbar Ends-->
+
+    <div class="body">
   <div class="showcase">
     <h1>CSS Vertical Alignment: Tips and Techniques</h1>
     <span>May 2, 2021 | By Izuagbe Samuel</span>
@@ -178,16 +205,36 @@
     <button class="btn"><a href="more4.html">Next Post</a></button>
    </div>
    <br>
+  </div>
 
    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   
 
-   <footer class="footer">
-    <img src="images/logo.png" alt="My Logo">
-    <h1>Let's Start<br> Something <div>Great.</div> </h1>
-    <p>A creative enterprise in Lagos</p>
-    <b>&copy;2021 Coop Enterprise. All Right Reserved</b>
-  </footer>
-
+    <!-- Footer Starts -->
+    <footer class="footer">
+      <img src="images/logo.png" alt="My Logo"/>
+      <h1>
+        Let's Start<br />Something<br/>
+        <span>Great.</span>
+      </h1>
+      <div class="blog-overview">
+        <h2>Blog Overview</h2>
+        <div class="blog-links">
+          <a href="more1.html">Best Tools and Deals for Developers and Designers</a><br />
+          <a href="more2.html">Powerful Techniques For Responsive Web Design</a><br />
+          <a href="more3.html">CSS Vertical Alignment: Tips and Techniques</a><br />
+          <a href="more4.html">Quick Tips to make your WordPress Site Faster</a><br />
+          <a href="more5.html">Introduction to GitHub and Git Bash</a><br />
+          <a href="more6.html">Best Visual Studio Code Extensions</a><br />
+          <a href="more7.html">Javascript Event Listeners</a><br />
+          <a href="more8.html">Ways To earn Money as a Developer</a><br />
+        </div>
+      </div>
+      <div class="footer-closure">
+        <p>A creative enterprise in Lagos</p>
+        <b>&copy;2021 Coop Enterprise. All Right Reserved</b>
+      </div>
+    </footer>
+    <!-- Footer Ends -->
 </body>
 </html>

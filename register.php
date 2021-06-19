@@ -76,7 +76,7 @@ if($_SERVER["REQUEST_METHOD"] == 'POST') {
   <div class="wrapper">
     <h2>Sign Up</h2>
     <p>Please fill the form to create an account.</p>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" enctype="multipart/form-data">
       <div class="form-group">
         <label>Username</label>
         <input type="text" name="username"

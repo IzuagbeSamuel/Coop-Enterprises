@@ -55,10 +55,10 @@ function closeEmailCnt() {
   document.getElementById('email-content').style.display = 'none';
 }
 
-let emailCnt = document.getElementById('email-content');
-window.onscroll = function () {
-  scrollFunction();
-};
+// let emailCnt = document.getElementById('email-content');
+// window.onscroll = function () {
+//   scrollFunction();
+// };
 
 // function scrollFunction() {
 //   if (document.body.scroll > 10 || document.documentElement.scrollTop > 15) {
