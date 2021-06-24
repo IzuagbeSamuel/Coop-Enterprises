@@ -70,6 +70,10 @@ function closeDropdown() {
 function closeTimeFrame() {
   document.getElementById('time-frame').style.display = 'none';
 }
+
+function closeMessage() {
+  document.getElementById('callout-message').style.display = 'none';
+}
 // let emailCnt = document.getElementById('email-content');
 // window.onscroll = function () {
 //   scrollFunction();
