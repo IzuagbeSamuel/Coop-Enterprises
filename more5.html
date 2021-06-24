@@ -37,16 +37,27 @@
           <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
         </li>
         <div class="dropdown">
-          <li><a href="index.html" class="active">Blogs</a></li>
-          <div class="dropdown-content">
-            <li><a href="more1.html">Best Tools and Deals for Developers and Designers</a><br /></li>
+          <li>
+            <a href="index.html" class="active">Blogs</a><span id="down-arrow" onclick="showDropdown()" class="arrow down"></span
+            ><span id="hide-dropdown" onclick="closeDropdown()" class="arrow up"></span>
+          </li>
+          <div class="dropdown-content" id="dropdown-content">
+            <li><a href="more1.html">Best Tools and Deals for Developers and Designers</a></li>
+            <br />
             <li><a href="more3.html">CSS Vertical Alignment: Tips and Techniques</a></li>
+            <br />
             <li><a href="more2.html">Powerful Techniques For Responsive Web Design</a></li>
+            <br />
             <li><a href="more4.html">Quick Tips to make your WordPress Site Faster</a></li>
+            <br />
             <li><a href="more5.html">Introduction to GitHub and Git Bash</a></li>
+            <br />
             <li><a href="more6.html">Best Visual Studio Code Extensions</a></li>
+            <br />
             <li><a href="more7.html">Javascript Event Listeners</a></li>
+            <br />
             <li><a href="more8.html">Ways To earn Money as a Developer</a></li>
+            <br />
           </div>
         </div>
         <li><a href="contact.html">Contact</a></li>
@@ -60,6 +71,15 @@
     <!-- Alert Ends -->
 
     <div class="body">
+      <div class="time-frame" id="time-frame">
+        <div class="time-section">
+          <p id="close-time" onclick="closeTimeFrame()">&times;</p>
+          <p>30minutes read</p>
+          <p>Share this article</p>
+          <p>Date published - April 23, 2021</p>
+        </div>
+      </div>
+
       <div class="showcase">
         <h1>Introduction to GitHub and Git</h1>
         <p><span>April 23, 2021 | By Izuagbe Samuel</span></p>

@@ -41,8 +41,8 @@ p {
 }
 
 .body {
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 23%;
+  margin-right: 23%;
 }
 
 .logo img {
@@ -78,10 +78,6 @@ p {
   color: var(--primary-color);
 }
 
-.navbar .bar {
-  display: noe;
-}
-
 .navbar a.active {
   color: var(--primary-color);
 }
@@ -109,7 +105,7 @@ p {
   float: right;
   display: block;
   height: 100%;
-  width: 0;
+  width: 0px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -125,6 +121,7 @@ p {
   font-size: 17px;
   display: block;
   transition: 0.3s ease;
+  color: black;
 }
 
 .side-nav a:hover {
@@ -139,9 +136,63 @@ p {
   position: absolute;
   top: 0;
   right: 0;
-  font-size: 40px;
+  font-size: 30px;
   float: right;
   color: white;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+}
+
+.dropdown .dropdown-content li {
+  background-color: rgb(179, 179, 235);
+  padding-left: 30px;
+}
+
+.dropdown .dropdown-content a {
+  color: white;
+  padding-right: 40px;
+  font-size: 14px;
+}
+
+.dropdown .dropdown-content li:hover {
+  background-color: rgb(155, 155, 245);
+}
+
+.dropdown li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown span {
+  font-size: 55px;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  font-size: 55px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 55px;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 55px;
+  display: none;
 }
 
 .wrapper {
@@ -217,6 +268,29 @@ p {
   display: none;
 }
 
+.time-frame {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 60%;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+}
+
+.time-frame p {
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.time-frame #close-time {
+  font-size: 30px;
+  cursor: pointer;
+  animation: spin 3s linear infinite;
+}
+
 .showcase {
   margin: 20px;
   padding-top: 30px;
@@ -251,6 +325,11 @@ p {
 }
 
 @media (max-width: 952px) {
+  .body {
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+
   label.logo {
     font-size: 18px;
   }
