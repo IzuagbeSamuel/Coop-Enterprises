@@ -28,10 +28,6 @@ a:hover {
   transform: scale(0.9);
 }
 
-a.active {
-  border-bottom: 2px solid black;
-}
-
 ul {
   list-style: none;
 }
@@ -117,7 +113,7 @@ p {
   float: right;
   display: block;
   height: 100%;
-  width: 0;
+  width: 300px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -151,6 +147,62 @@ p {
   font-size: 40px;
   float: right;
   color: white;
+}
+
+
+
+.dropdown .dropdown-content {
+  display: none;
+}
+
+.dropdown .dropdown-content li {
+  background-color: rgb(179, 179, 235);
+  padding-left: 30px;
+}
+
+.dropdown .dropdown-content a {
+  color: white;
+  padding-right: 40px;
+  font-size: 14px;
+}
+
+.dropdown .dropdown-content li:hover {
+  background-color: rgb(155, 155, 245);
+}
+
+.dropdown li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown span {
+  font-size: 55px;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  font-size: 55px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 55px;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 55px;
+  display: none;
 }
 
 .showcase {
@@ -190,7 +242,7 @@ h2 {
 }
 
 .example1 img {
-  width: 100%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -216,7 +268,7 @@ h2 {
 
 .example2 img {
   border-radius: 5px;
-  width: 100%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -224,7 +276,7 @@ h2 {
 }
 
 .example3 img {
-  width: 100%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -232,7 +284,7 @@ h2 {
 }
 
 .example4 img {
-  width: 100%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -240,7 +292,7 @@ h2 {
 }
 
 .example5 img {
-  width: 100%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -248,7 +300,7 @@ h2 {
 }
 
 .example6 img {
-  width: 100%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -256,7 +308,7 @@ h2 {
 }
 
 .example7 img {
-  width: 100%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -345,11 +397,16 @@ h2 {
 
 .media p {
   font-size: 19px;
+  margin: 30px;
 }
 
 .media a {
-  padding: 1px;
+  padding: 0;
+  font-size: 35px;
+  color: black;
+  margin: 30px;
 }
+
 
 .btn {
   display: inline-block;
