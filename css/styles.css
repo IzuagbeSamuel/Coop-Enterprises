@@ -57,6 +57,46 @@ p {
   margin: 5px;
 } */
 
+.showcase {
+  height: 400px;
+  background-color: var(--primary-color);
+  margin-top: 80px;
+}
+
+.showcase img {
+  width: 50%;
+}
+
+.showcase h1 {
+  font-size: 40px;
+}
+
+.showcase p {
+  padding: 20px;
+}
+
+.showcase .grid {
+  overflow: hidden;
+  grid-template-columns: 55% 45%;
+  gap: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
 i {
   margin: 3px;
 }
@@ -208,7 +248,6 @@ i {
   display: none;
 }
 
-
 .alert {
   padding: 20px;
   background-color: var(--primary-color);
@@ -286,8 +325,8 @@ i {
 
 .wrapper {
   max-width: 450px;
-  margin: 70px auto;
-  padding-top: 80px;
+  margin: 50px auto;
+  padding-top: 20px;
 }
 
 .wrapper .search-input {
