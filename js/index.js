@@ -43,16 +43,10 @@ function showSuggestions(list) {
 
 function openSlideMenu() {
   document.getElementById('side-menu').style.width = '300px';
-  document.getElementById('alert').style.marginRight = '300px';
 }
 
 function closeSlideMenu() {
   document.getElementById('side-menu').style.width = '0';
-  document.getElementById('alert').style.marginRight = '0';
-}
-
-function closeEmailCnt() {
-  document.getElementById('email-content').style.display = 'none';
 }
 
 function showDropdown() {
