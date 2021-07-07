@@ -48,8 +48,6 @@
             <br />
             <li><a href="more2.html">Powerful Techniques For Responsive Web Design</a></li>
             <br />
-            <li><a href="more4.html">Quick Tips to make your WordPress Site Faster</a></li>
-            <br />
             <li><a href="more5.html">Introduction to GitHub and Git Bash</a></li>
             <br />
             <li><a href="more6.html">Best Visual Studio Code Extensions</a></li>
@@ -66,20 +64,7 @@
     </div>
     <!-- Navbar Ends-->
 
-    <!-- Alert Starts -->
-    <div class="alert" id="alert"><span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>Welcome To My Blog</div>
-    <!-- Alert Ends -->
-
     <div class="body">
-      <div class="time-frame" id="time-frame">
-        <div class="time-section">
-          <p id="close-time" onclick="closeTimeFrame()">&times;</p>
-          <p>30minutes read</p>
-          <p>Share this article</p>
-          <p>Date published - April 23, 2021</p>
-        </div>
-      </div>
-
       <div class="showcase">
         <h1>Introduction to GitHub and Git</h1>
         <p><span>April 23, 2021 | By Izuagbe Samuel</span></p>
@@ -111,7 +96,7 @@
             <li>git branch</li>
             <li>git clone</li>
             <li>git commit</li>
-            <!-- <li>git diff</li> -->
+            <li>git diff</li>
             <li>git reset</li>
             <li>git tag</li>
             <li>git checkout</li>
@@ -119,6 +104,7 @@
             <li>git merge</li>
             <li>git remote</li>
             <li>git stash</li>
+            <li>git push</li>
             <p>We'll also deal with some commands that helps us navigate through the computer:</p>
             <li>mkdir</li>
             <li>touch</li>
@@ -243,17 +229,17 @@
           <br />
           <hr />
           <br />
-          <!-- 
-        <b><li>git diff</li></b>
-        <p> This shows the differences which are not yet staged in the working file.</p>
-        <b><p>Command Line: git diff </p></b>
 
-        <br>
-        <p>This command shows the differences between the files in the latest version present from the previous staging area.</p>
-        <b><p>Command Line: git diff -staged</p></b>
-        <br>
-        <hr>
-        <br> -->
+          <b><li>git diff</li></b>
+          <p>This shows the differences which are not yet staged in the working file.</p>
+          <b><p>Command Line: git diff</p></b>
+
+          <br />
+          <p>This command shows the differences between the files in the latest version present from the previous staging area.</p>
+          <b><p>Command Line: git diff -staged</p></b>
+          <br />
+          <hr />
+          <br />
 
           <b><li>git tag</li></b>
           <p>This command is used to give tags to the specified commit.</p>
@@ -262,6 +248,66 @@
           <br />
           <hr />
           <br />
+
+          <b><li>git push</li></b>
+          <p>This command is used to move all committed changes of main branch to your working repository.</p>
+          <b><p>Command Line: git push [origin name] main</p></b>
+          <p>
+            <b>Note:</b> The above command moves <b>ALL</b> the working files to your repository after you
+            <b>git add . & git commit -m "[your commit message]".</b>The main branch is the default branch so you cannot push without having a branch
+          </p>
+          <img src="images/gitpush.png" alt="" />
+          <p>
+            If by any means you have various branches in your git directory you can use the bellow command to push just a branch, if that is what you
+            want but
+            <b
+              >Reminder:The above command pushes all committed changes to the repository but the command bellow pushes just a single brach if in case
+              you have multiple branches.</b
+            >
+          </p>
+          <p><b>Command Line: git push [origin name] [branch name]</b></p>
+          <p>The above command pushes just the single branch.</p>
+          <p><b>Command Line: git push -all [origin name]</b></p>
+          <p>The above command pushes all branches to your remote repository.</p>
+          <br />
+          <hr />
+          <br />
+
+          <li><b>git stash</b></li>
+          <p><b>Command Line: git stash save</b></p>
+          <p>The above command temporarily stores all the modified tracked files.</p>
+          <img src="" alt="" />
+          <br />
+          <p><b>Command Line: git stash pop</b></p>
+          <p>The above command line restores the most recent stashed files.</p>
+          <img src="" alt="" />
+          <br />
+          <p><b>Command Line: git stash list</b></p>
+          <p>The above command lists all stashed change sets.</p>
+          <img src="" alt="" />
+          <br />
+          <p><b>Command Line: gut stash drop</b></p>
+          <p>The above command discards the most recently stashed change sets</p>
+          <img src="" alt="" />
+          <br>
+          <hr>
+          <br>
+
+          <li><b>git remote</b></li>
+          <p><b>Command Line: git remote add [origin name] [remote server link]</b></p>
+          <p>The above command is used to connect your local repository to the remote server.</p>
+          <img src="images/git remote.png" alt="">
+          <br>
+          <hr>
+          <br>
+
+          <li><b>git reset</b></li>
+          <p><b>Command Line: git reset [file]</b></p>
+          <p>The above command will unstage the file, but it will not affect the file content</p>
+          <img src="images/git reset.png" alt="">
+          <br>
+          <hr>
+          <br>
         </ul>
       </div>
     </div>
@@ -279,7 +325,6 @@
           <a href="more1.html">Best Tools and Deals for Developers and Designers</a><br />
           <a href="more2.html">Powerful Techniques For Responsive Web Design</a><br />
           <a href="more3.html">CSS Vertical Alignment: Tips and Techniques</a><br />
-          <a href="more4.html">Quick Tips to make your WordPress Site Faster</a><br />
           <a href="more5.html">Introduction to GitHub and Git Bash</a><br />
           <a href="more6.html">Best Visual Studio Code Extensions</a><br />
           <a href="more7.html">Javascript Event Listeners</a><br />
