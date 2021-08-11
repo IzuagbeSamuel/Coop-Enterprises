@@ -48,7 +48,7 @@ import './../css/styles.css';
 // }
 
 document.querySelector('.fa-bars').addEventListener('click', () => {
-  document.getElementById('side-menu').style.width = '400px';
+  document.getElementById('side-menu').style.width = '350px';
 });
 
 document.querySelector('.btn-closure').addEventListener('click', () => {

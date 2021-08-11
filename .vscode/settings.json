@@ -1,13 +1,5 @@
 {
   "liveServer.settings.port": 5502,
   "python.pythonPath": "C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
-  "cSpell.ignoreWords": [
-    "autocom",
-    "box",
-    "callout",
-    "closebtn",
-    "gtag",
-    "message",
-    "sugg"
-  ]
+  "cSpell.ignoreWords": ["autocom", "box", "callout", "closebtn", "coop", "enterprises", "gtag", "message", "sugg"]
 }
